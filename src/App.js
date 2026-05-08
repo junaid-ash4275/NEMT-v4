@@ -48,6 +48,7 @@ import TypingSpeedTest from "./components/TypingSpeedTest";
 import ReactionTimeGame from "./components/ReactionTimeGame";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
+import PixelArtMaker from "./components/PixelArtMaker";
 
 
 
@@ -56,6 +57,7 @@ import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PixelArtMaker />
       <ChordProgressionGenerator />
       <ColorContrastChecker />
       <ReactionTimeGame />
