@@ -1,4 +1,5 @@
 import ReadingSpeedTest from "./components/ReadingSpeedTest";
+import LoanCalculator from "./components/LoanCalculator";
 import GradientGenerator from "./components/GradientGenerator";
 import SignaturePad from "./components/SignaturePad";
 import ExpenseSplitter from "./components/ExpenseSplitter";
@@ -57,6 +58,7 @@ import PixelArtMaker from "./components/PixelArtMaker";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <LoanCalculator />
       <PixelArtMaker />
       <ChordProgressionGenerator />
       <ColorContrastChecker />
