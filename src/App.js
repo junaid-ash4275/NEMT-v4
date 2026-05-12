@@ -1,3 +1,4 @@
+import DrumSequencer from "./components/DrumSequencer";
 import ReadingSpeedTest from "./components/ReadingSpeedTest";
 import LoanCalculator from "./components/LoanCalculator";
 import GradientGenerator from "./components/GradientGenerator";
@@ -58,6 +59,7 @@ import PixelArtMaker from "./components/PixelArtMaker";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <DrumSequencer />
       <LoanCalculator />
       <PixelArtMaker />
       <ChordProgressionGenerator />
