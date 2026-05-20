@@ -1,4 +1,5 @@
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
+import PixelPhysicsSandbox from "./components/PixelPhysicsSandbox";
 import SynthwaveStudio from "./components/SynthwaveStudio";
 import NeuralNetworkVisualizer from "./components/NeuralNetworkVisualizer";
 import MeshGradientGenerator from "./components/MeshGradientGenerator";
@@ -66,6 +67,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <GravityOrbitSandbox />
+      <PixelPhysicsSandbox />
       <SynthwaveStudio />
       <NeuralNetworkVisualizer />
       <MeshGradientGenerator />
