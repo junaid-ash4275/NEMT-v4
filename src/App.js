@@ -58,6 +58,7 @@ import ReactionTimeGame from "./components/ReactionTimeGame";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 import PixelArtMaker from "./components/PixelArtMaker";
+import MoodTracker from "./components/MoodTracker";
 
 
 
@@ -76,6 +77,7 @@ function App() {
       <DrumSequencer />
       <LoanCalculator />
       <PixelArtMaker />
+      <MoodTracker />
       <ChordProgressionGenerator />
       <ColorContrastChecker />
       <ReactionTimeGame />
