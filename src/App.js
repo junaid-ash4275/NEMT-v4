@@ -1,10 +1,6 @@
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
-import PixelPhysicsSandbox from "./components/PixelPhysicsSandbox";
 import SynthwaveStudio from "./components/SynthwaveStudio";
 import NeuralNetworkVisualizer from "./components/NeuralNetworkVisualizer";
-import MeshGradientGenerator from "./components/MeshGradientGenerator";
-import ShadowGenerator from "./components/ShadowGenerator";
-import HabitTracker from "./components/HabitTracker";
 import DrumSequencer from "./components/DrumSequencer";
 import ReadingSpeedTest from "./components/ReadingSpeedTest";
 import LoanCalculator from "./components/LoanCalculator";
@@ -55,10 +51,7 @@ import DecisionSpinner from "./components/DecisionSpinner";
 import FocusSoundscape from "./components/FocusSoundscape";
 import TypingSpeedTest from "./components/TypingSpeedTest";
 import ReactionTimeGame from "./components/ReactionTimeGame";
-import ColorContrastChecker from "./components/ColorContrastChecker";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
-import PixelArtMaker from "./components/PixelArtMaker";
-import MoodTracker from "./components/MoodTracker";
 
 
 
@@ -68,18 +61,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <GravityOrbitSandbox />
-      <PixelPhysicsSandbox />
       <SynthwaveStudio />
       <NeuralNetworkVisualizer />
-      <MeshGradientGenerator />
-      <ShadowGenerator />
-      <HabitTracker />
       <DrumSequencer />
       <LoanCalculator />
-      <PixelArtMaker />
-      <MoodTracker />
       <ChordProgressionGenerator />
-      <ColorContrastChecker />
       <ReactionTimeGame />
       <TypingSpeedTest />
       <FocusSoundscape />
