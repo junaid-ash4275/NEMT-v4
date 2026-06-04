@@ -52,7 +52,6 @@ import FocusSoundscape from "./components/FocusSoundscape";
 import TypingSpeedTest from "./components/TypingSpeedTest";
 import ReactionTimeGame from "./components/ReactionTimeGame";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
-import AnimatedCounter from "./components/AnimatedCounter";
 import HexToRgbaConverter from "./components/HexToRgbaConverter";
 
 
@@ -62,7 +61,6 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <HexToRgbaConverter />
-      <AnimatedCounter target={5000} label="Demo Counter" />
       <GravityOrbitSandbox />
       <SynthwaveStudio />
       <NeuralNetworkVisualizer />
