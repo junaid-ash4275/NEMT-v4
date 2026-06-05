@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 const NeuralNetworkVisualizer = () => {
     const [layers, setLayers] = useState([4, 6, 6, 2]);

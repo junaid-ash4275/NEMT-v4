@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const TRACKS = [
   { id: "kick", name: "🥁 Kick", color: "bg-rose-500", frequency: 150 },
