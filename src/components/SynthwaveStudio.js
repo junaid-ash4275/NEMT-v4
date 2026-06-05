@@ -121,7 +121,6 @@ const SynthwaveStudio = () => {
 
   // Refs for Canvas Visualizer
   const canvasRef = useRef(null);
-  const animationFrameRef = useRef(null);
   const particlesRef = useRef([]);
 
   // Initialize Audio Nodes
