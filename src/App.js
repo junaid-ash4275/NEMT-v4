@@ -3,6 +3,7 @@ import SynthwaveStudio from "./components/SynthwaveStudio";
 import NeuralNetworkVisualizer from "./components/NeuralNetworkVisualizer";
 import DrumSequencer from "./components/DrumSequencer";
 import ReadingSpeedTest from "./components/ReadingSpeedTest";
+import SubscriptionTracker from "./components/SubscriptionTracker";
 import LoanCalculator from "./components/LoanCalculator";
 import GradientGenerator from "./components/GradientGenerator";
 import SignaturePad from "./components/SignaturePad";
@@ -59,6 +60,7 @@ import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SubscriptionTracker />
       <GravityOrbitSandbox />
       <SynthwaveStudio />
       <NeuralNetworkVisualizer />
