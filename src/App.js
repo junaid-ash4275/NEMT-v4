@@ -54,6 +54,7 @@ import TypingSpeedTest from "./components/TypingSpeedTest";
 import ReactionTimeGame from "./components/ReactionTimeGame";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 import HexToRgbaConverter from "./components/HexToRgbaConverter";
+import ColorContrastChecker from "./components/ColorContrastChecker";
 
 
 
@@ -61,6 +62,7 @@ import HexToRgbaConverter from "./components/HexToRgbaConverter";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <ColorContrastChecker />
       <HexToRgbaConverter />
       <GravityOrbitSandbox />
       <SynthwaveStudio />
