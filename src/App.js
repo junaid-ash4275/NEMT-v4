@@ -3,6 +3,7 @@ import SynthwaveStudio from "./components/SynthwaveStudio";
 import NeuralNetworkVisualizer from "./components/NeuralNetworkVisualizer";
 import DrumSequencer from "./components/DrumSequencer";
 import ReadingSpeedTest from "./components/ReadingSpeedTest";
+import SortingVisualizer from "./components/SortingVisualizer";
 import SubscriptionTracker from "./components/SubscriptionTracker";
 import LoanCalculator from "./components/LoanCalculator";
 import GradientGenerator from "./components/GradientGenerator";
@@ -62,12 +63,14 @@ import ColorContrastChecker from "./components/ColorContrastChecker";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
-      <ColorContrastChecker />
+      <SortingVisualizer />
+      <SubscriptionTracker />
       <HexToRgbaConverter />
       <GravityOrbitSandbox />
       <SynthwaveStudio />
       <NeuralNetworkVisualizer />
       <DrumSequencer />
+      <ColorContrastChecker />
       <LoanCalculator />
       <ChordProgressionGenerator />
       <ReactionTimeGame />
