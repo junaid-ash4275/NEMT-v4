@@ -56,6 +56,7 @@ import ReactionTimeGame from "./components/ReactionTimeGame";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 import HexToRgbaConverter from "./components/HexToRgbaConverter";
 import ColorContrastChecker from "./components/ColorContrastChecker";
+import LoremIpsumGenerator from "./components/LoremIpsumGenerator";
 
 
 
@@ -71,6 +72,7 @@ function App() {
       <NeuralNetworkVisualizer />
       <DrumSequencer />
       <ColorContrastChecker />
+      <LoremIpsumGenerator />
       <LoanCalculator />
       <ChordProgressionGenerator />
       <ReactionTimeGame />
