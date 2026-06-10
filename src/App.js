@@ -57,6 +57,7 @@ import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 import HexToRgbaConverter from "./components/HexToRgbaConverter";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator";
+import BoxShadowGenerator from "./components/BoxShadowGenerator";
 
 
 
@@ -72,6 +73,7 @@ function App() {
       <NeuralNetworkVisualizer />
       <DrumSequencer />
       <ColorContrastChecker />
+      <BoxShadowGenerator />
       <LoremIpsumGenerator />
       <LoanCalculator />
       <ChordProgressionGenerator />
