@@ -1,3 +1,4 @@
+import KeycodeDetector from "./components/KeycodeDetector";
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
 import SynthwaveStudio from "./components/SynthwaveStudio";
 import NeuralNetworkVisualizer from "./components/NeuralNetworkVisualizer";
@@ -65,6 +66,8 @@ import BoxShadowGenerator from "./components/BoxShadowGenerator";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <LoremIpsumGenerator />
+      <KeycodeDetector />
       <SortingVisualizer />
       <SubscriptionTracker />
       <HexToRgbaConverter />
@@ -74,7 +77,6 @@ function App() {
       <DrumSequencer />
       <ColorContrastChecker />
       <BoxShadowGenerator />
-      <LoremIpsumGenerator />
       <LoanCalculator />
       <ChordProgressionGenerator />
       <ReactionTimeGame />
