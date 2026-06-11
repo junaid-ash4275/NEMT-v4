@@ -18,6 +18,7 @@ const SortingVisualizer = () => {
 
   useEffect(() => {
     resetArray();
+    // eslint-disable-next-line
   }, [arraySize]);
 
   const resetArray = () => {

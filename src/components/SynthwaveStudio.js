@@ -319,6 +319,7 @@ const SynthwaveStudio = () => {
     if (noteIndex !== -1) {
       addParticles(noteIndex);
     }
+    // eslint-disable-next-line
   }, [octave, waveform, attack, decay, sustain, distortion, delayFeedback]);
 
   // Release Sound Generator (ADSR Release phase)
