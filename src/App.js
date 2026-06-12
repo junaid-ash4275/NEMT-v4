@@ -59,6 +59,7 @@ import HexToRgbaConverter from "./components/HexToRgbaConverter";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator";
 import BoxShadowGenerator from "./components/BoxShadowGenerator";
+import TextToSpeech from "./components/TextToSpeech";
 
 
 
@@ -66,6 +67,7 @@ import BoxShadowGenerator from "./components/BoxShadowGenerator";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <TextToSpeech />
       <LoremIpsumGenerator />
       <KeycodeDetector />
       <SortingVisualizer />
