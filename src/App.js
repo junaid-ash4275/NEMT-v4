@@ -60,6 +60,7 @@ import ColorContrastChecker from "./components/ColorContrastChecker";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator";
 import BoxShadowGenerator from "./components/BoxShadowGenerator";
 import TextToSpeech from "./components/TextToSpeech";
+import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
 
 
 
@@ -67,6 +68,7 @@ import TextToSpeech from "./components/TextToSpeech";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PasswordStrengthChecker />
       <TextToSpeech />
       <LoremIpsumGenerator />
       <KeycodeDetector />
