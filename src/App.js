@@ -61,6 +61,7 @@ import LoremIpsumGenerator from "./components/LoremIpsumGenerator";
 import BoxShadowGenerator from "./components/BoxShadowGenerator";
 import TextToSpeech from "./components/TextToSpeech";
 import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
+import Metronome from "./components/Metronome";
 
 
 
@@ -68,6 +69,7 @@ import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <Metronome />
       <PasswordStrengthChecker />
       <TextToSpeech />
       <LoremIpsumGenerator />
