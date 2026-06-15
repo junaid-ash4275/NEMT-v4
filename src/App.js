@@ -62,6 +62,7 @@ import BoxShadowGenerator from "./components/BoxShadowGenerator";
 import TextToSpeech from "./components/TextToSpeech";
 import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
 import Metronome from "./components/Metronome";
+import Base64EncoderDecoder from "./components/Base64EncoderDecoder";
 
 
 
@@ -69,6 +70,7 @@ import Metronome from "./components/Metronome";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <Base64EncoderDecoder />
       <Metronome />
       <PasswordStrengthChecker />
       <TextToSpeech />
