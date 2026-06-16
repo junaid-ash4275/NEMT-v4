@@ -1,3 +1,4 @@
+import FractalArtExplorer from "./components/FractalArtExplorer";
 import KeycodeDetector from "./components/KeycodeDetector";
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
 import SynthwaveStudio from "./components/SynthwaveStudio";
@@ -70,6 +71,7 @@ import Base64EncoderDecoder from "./components/Base64EncoderDecoder";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <FractalArtExplorer />
       <Base64EncoderDecoder />
       <Metronome />
       <PasswordStrengthChecker />
