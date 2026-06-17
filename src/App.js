@@ -1,4 +1,3 @@
-import FractalArtExplorer from "./components/FractalArtExplorer";
 import KeycodeDetector from "./components/KeycodeDetector";
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
 import SynthwaveStudio from "./components/SynthwaveStudio";
@@ -14,7 +13,6 @@ import ExpenseSplitter from "./components/ExpenseSplitter";
 import MemoryGame from "./components/MemoryGame";
 import WaterTracker from "./components/WaterTracker";
 import QuoteGenerator from "./components/QuoteGenerator";
-import ColorPalette from "./components/ColorPalette";
 import PomodoroTimer from "./components/PomodoroTimer";
 import TaskList from "./components/TaskList";
 import WeatherDashboard from "./components/WeatherDashboard";
@@ -43,11 +41,7 @@ import TimeZoneConverter from "./components/TimeZoneConverter";
 import LifeProgressTracker from "./components/LifeProgressTracker";
 import FlashcardApp from "./components/FlashcardApp";
 import InvestmentCalculator from "./components/InvestmentCalculator";
-import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
 import CarbonFootprintCalculator from "./components/CarbonFootprintCalculator";
-import BlobGenerator from "./components/BlobGenerator";
-import NeumorphismStudio from "./components/NeumorphismStudio";
-import FilterStudio from "./components/FilterStudio";
 import EmotionJournal from "./components/EmotionJournal";
 import GratitudeJar from "./components/GratitudeJar";
 import ConstellationMaker from "./components/ConstellationMaker";
@@ -57,9 +51,7 @@ import TypingSpeedTest from "./components/TypingSpeedTest";
 import ReactionTimeGame from "./components/ReactionTimeGame";
 import ChordProgressionGenerator from "./components/ChordProgressionGenerator";
 import HexToRgbaConverter from "./components/HexToRgbaConverter";
-import ColorContrastChecker from "./components/ColorContrastChecker";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator";
-import BoxShadowGenerator from "./components/BoxShadowGenerator";
 import TextToSpeech from "./components/TextToSpeech";
 import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
 import Metronome from "./components/Metronome";
@@ -71,7 +63,6 @@ import Base64EncoderDecoder from "./components/Base64EncoderDecoder";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
-      <FractalArtExplorer />
       <Base64EncoderDecoder />
       <Metronome />
       <PasswordStrengthChecker />
@@ -85,8 +76,6 @@ function App() {
       <SynthwaveStudio />
       <NeuralNetworkVisualizer />
       <DrumSequencer />
-      <ColorContrastChecker />
-      <BoxShadowGenerator />
       <LoanCalculator />
       <ChordProgressionGenerator />
       <ReactionTimeGame />
@@ -96,10 +85,6 @@ function App() {
       <ConstellationMaker />
       <GratitudeJar />
       <EmotionJournal />
-      <FilterStudio />
-      <NeumorphismStudio />
-      <GlassmorphismGenerator />
-      <BlobGenerator />
       <GradientGenerator />
       <CarbonFootprintCalculator />
       <LifeProgressTracker />
@@ -122,7 +107,6 @@ function App() {
       <QuoteGenerator />
       <JokeGenerator />
       <TriviaQuiz />
-      <ColorPalette />
       <PomodoroTimer />
       <TaskList />
       <WeatherDashboard />
