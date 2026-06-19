@@ -57,6 +57,7 @@ import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
 import Metronome from "./components/Metronome";
 import Base64EncoderDecoder from "./components/Base64EncoderDecoder";
 import PixelArtStudio from "./components/PixelArtStudio";
+import DoublePendulumChaos from "./components/DoublePendulumChaos";
 
 
 
@@ -64,6 +65,7 @@ import PixelArtStudio from "./components/PixelArtStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <DoublePendulumChaos />
       <PixelArtStudio />
       <Base64EncoderDecoder />
       <Metronome />
