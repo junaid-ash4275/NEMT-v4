@@ -58,6 +58,7 @@ import Metronome from "./components/Metronome";
 import Base64EncoderDecoder from "./components/Base64EncoderDecoder";
 import PixelArtStudio from "./components/PixelArtStudio";
 import DoublePendulumChaos from "./components/DoublePendulumChaos";
+import ToneGenerator from "./components/ToneGenerator";
 
 
 
@@ -65,6 +66,7 @@ import DoublePendulumChaos from "./components/DoublePendulumChaos";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <ToneGenerator />
       <DoublePendulumChaos />
       <PixelArtStudio />
       <Base64EncoderDecoder />
