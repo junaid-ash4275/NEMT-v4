@@ -1,3 +1,4 @@
+import AgeCalculator from "./components/AgeCalculator";
 import KeycodeDetector from "./components/KeycodeDetector";
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
 import SynthwaveStudio from "./components/SynthwaveStudio";
@@ -66,6 +67,7 @@ import ToneGenerator from "./components/ToneGenerator";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <AgeCalculator />
       <ToneGenerator />
       <DoublePendulumChaos />
       <PixelArtStudio />
