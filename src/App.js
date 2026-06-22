@@ -60,6 +60,7 @@ import Base64EncoderDecoder from "./components/Base64EncoderDecoder";
 import PixelArtStudio from "./components/PixelArtStudio";
 import DoublePendulumChaos from "./components/DoublePendulumChaos";
 import ToneGenerator from "./components/ToneGenerator";
+import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 
 
 
@@ -69,6 +70,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 pb-10">
       <AgeCalculator />
       <ToneGenerator />
+      <ColorPaletteGenerator />
       <DoublePendulumChaos />
       <PixelArtStudio />
       <Base64EncoderDecoder />
