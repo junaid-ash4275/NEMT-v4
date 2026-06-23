@@ -61,13 +61,14 @@ import PixelArtStudio from "./components/PixelArtStudio";
 import DoublePendulumChaos from "./components/DoublePendulumChaos";
 import ToneGenerator from "./components/ToneGenerator";
 import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
-
+import VirtualPet from "./components/VirtualPet";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <VirtualPet />
       <AgeCalculator />
       <ToneGenerator />
       <ColorPaletteGenerator />
