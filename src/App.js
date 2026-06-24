@@ -62,6 +62,7 @@ import DoublePendulumChaos from "./components/DoublePendulumChaos";
 import ToneGenerator from "./components/ToneGenerator";
 import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 import VirtualPet from "./components/VirtualPet";
+import CSSBoxShadowGenerator from "./components/CSSBoxShadowGenerator";
 
 
 
@@ -72,6 +73,7 @@ function App() {
       <AgeCalculator />
       <ToneGenerator />
       <ColorPaletteGenerator />
+      <CSSBoxShadowGenerator />
       <DoublePendulumChaos />
       <PixelArtStudio />
       <Base64EncoderDecoder />
