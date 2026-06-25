@@ -63,12 +63,14 @@ import ToneGenerator from "./components/ToneGenerator";
 import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 import VirtualPet from "./components/VirtualPet";
 import CSSBoxShadowGenerator from "./components/CSSBoxShadowGenerator";
+import UrlEncoderDecoder from "./components/UrlEncoderDecoder";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <UrlEncoderDecoder />
       <VirtualPet />
       <AgeCalculator />
       <ToneGenerator />
