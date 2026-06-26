@@ -1,3 +1,4 @@
+import StringCaseConverter from "./components/StringCaseConverter";
 import AgeCalculator from "./components/AgeCalculator";
 import KeycodeDetector from "./components/KeycodeDetector";
 import GravityOrbitSandbox from "./components/GravityOrbitSandbox";
@@ -70,6 +71,7 @@ import UrlEncoderDecoder from "./components/UrlEncoderDecoder";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <StringCaseConverter />
       <UrlEncoderDecoder />
       <VirtualPet />
       <AgeCalculator />
