@@ -65,6 +65,7 @@ import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 import VirtualPet from "./components/VirtualPet";
 import CSSBoxShadowGenerator from "./components/CSSBoxShadowGenerator";
 import UrlEncoderDecoder from "./components/UrlEncoderDecoder";
+import UUIDGenerator from "./components/UUIDGenerator";
 
 
 
@@ -138,6 +139,7 @@ function App() {
       <TextAnalyzer />
       <BreathingExercise />
       <Stopwatch />
+      <UUIDGenerator />
     </div>
   );
 }
