@@ -66,12 +66,14 @@ import VirtualPet from "./components/VirtualPet";
 import CSSBoxShadowGenerator from "./components/CSSBoxShadowGenerator";
 import UrlEncoderDecoder from "./components/UrlEncoderDecoder";
 import UUIDGenerator from "./components/UUIDGenerator";
+import NumberBaseConverter from "./components/NumberBaseConverter";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <NumberBaseConverter />
       <StringCaseConverter />
       <UrlEncoderDecoder />
       <VirtualPet />
