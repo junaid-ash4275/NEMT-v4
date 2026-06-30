@@ -67,6 +67,7 @@ import CSSBoxShadowGenerator from "./components/CSSBoxShadowGenerator";
 import UrlEncoderDecoder from "./components/UrlEncoderDecoder";
 import UUIDGenerator from "./components/UUIDGenerator";
 import NumberBaseConverter from "./components/NumberBaseConverter";
+import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
 
 
 
@@ -142,6 +143,7 @@ function App() {
       <BreathingExercise />
       <Stopwatch />
       <UUIDGenerator />
+      <GlassmorphismGenerator />
     </div>
   );
 }
