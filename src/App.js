@@ -68,6 +68,7 @@ import UrlEncoderDecoder from "./components/UrlEncoderDecoder";
 import UUIDGenerator from "./components/UUIDGenerator";
 import NumberBaseConverter from "./components/NumberBaseConverter";
 import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
+import ColorContrastChecker from "./components/ColorContrastChecker";
 
 
 
@@ -144,6 +145,7 @@ function App() {
       <Stopwatch />
       <UUIDGenerator />
       <GlassmorphismGenerator />
+      <ColorContrastChecker />
     </div>
   );
 }
