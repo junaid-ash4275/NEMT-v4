@@ -69,12 +69,14 @@ import UUIDGenerator from "./components/UUIDGenerator";
 import NumberBaseConverter from "./components/NumberBaseConverter";
 import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
 import ColorContrastChecker from "./components/ColorContrastChecker";
+import UnixTimestampConverter from "./components/UnixTimestampConverter";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <UnixTimestampConverter />
       <NumberBaseConverter />
       <StringCaseConverter />
       <UrlEncoderDecoder />
