@@ -70,12 +70,14 @@ import NumberBaseConverter from "./components/NumberBaseConverter";
 import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import UnixTimestampConverter from "./components/UnixTimestampConverter";
+import BPMTapper from "./components/BPMTapper";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <BPMTapper />
       <UnixTimestampConverter />
       <NumberBaseConverter />
       <StringCaseConverter />
