@@ -1,3 +1,4 @@
+import SimonSays from "./components/SimonSays";
 import StringCaseConverter from "./components/StringCaseConverter";
 import AgeCalculator from "./components/AgeCalculator";
 import KeycodeDetector from "./components/KeycodeDetector";
@@ -77,6 +78,7 @@ import BPMTapper from "./components/BPMTapper";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SimonSays />
       <BPMTapper />
       <UnixTimestampConverter />
       <NumberBaseConverter />
