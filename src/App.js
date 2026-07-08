@@ -1,4 +1,5 @@
 import SimonSays from "./components/SimonSays";
+import ConwaysGameOfLife from "./components/ConwaysGameOfLife";
 import StringCaseConverter from "./components/StringCaseConverter";
 import AgeCalculator from "./components/AgeCalculator";
 import KeycodeDetector from "./components/KeycodeDetector";
@@ -78,6 +79,7 @@ import BPMTapper from "./components/BPMTapper";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <ConwaysGameOfLife />
       <SimonSays />
       <BPMTapper />
       <UnixTimestampConverter />
