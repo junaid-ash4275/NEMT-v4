@@ -1,3 +1,4 @@
+import TicTacToe from "./components/TicTacToe";
 import SimonSays from "./components/SimonSays";
 import StringCaseConverter from "./components/StringCaseConverter";
 import AgeCalculator from "./components/AgeCalculator";
@@ -152,6 +153,7 @@ function App() {
       <UUIDGenerator />
       <GlassmorphismGenerator />
       <ColorContrastChecker />
+      <TicTacToe />
     </div>
   );
 }
