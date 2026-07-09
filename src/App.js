@@ -1,3 +1,4 @@
+import TicTacToe from "./components/TicTacToe";
 import SimonSays from "./components/SimonSays";
 import ConwaysGameOfLife from "./components/ConwaysGameOfLife";
 import StringCaseConverter from "./components/StringCaseConverter";
@@ -154,6 +155,7 @@ function App() {
       <UUIDGenerator />
       <GlassmorphismGenerator />
       <ColorContrastChecker />
+      <TicTacToe />
     </div>
   );
 }
