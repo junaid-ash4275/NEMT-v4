@@ -1,4 +1,5 @@
 import TicTacToe from "./components/TicTacToe";
+import Magic8Ball from "./components/Magic8Ball";
 import SimonSays from "./components/SimonSays";
 import ConwaysGameOfLife from "./components/ConwaysGameOfLife";
 import StringCaseConverter from "./components/StringCaseConverter";
@@ -82,6 +83,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 pb-10">
       <ConwaysGameOfLife />
       <SimonSays />
+      <Magic8Ball />
       <BPMTapper />
       <UnixTimestampConverter />
       <NumberBaseConverter />
