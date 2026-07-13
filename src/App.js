@@ -1,4 +1,5 @@
 import TicTacToe from "./components/TicTacToe";
+import RegexTester from "./components/RegexTester";
 import Magic8Ball from "./components/Magic8Ball";
 import SimonSays from "./components/SimonSays";
 import ConwaysGameOfLife from "./components/ConwaysGameOfLife";
@@ -158,6 +159,7 @@ function App() {
       <GlassmorphismGenerator />
       <ColorContrastChecker />
       <TicTacToe />
+      <RegexTester />
     </div>
   );
 }
