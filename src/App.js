@@ -77,6 +77,7 @@ import ColorContrastChecker from "./components/ColorContrastChecker";
 import UnixTimestampConverter from "./components/UnixTimestampConverter";
 import BPMTapper from "./components/BPMTapper";
 import RockPaperScissors from "./components/RockPaperScissors";
+import CaesarCipher from "./components/CaesarCipher";
 
 
 
@@ -84,6 +85,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <RockPaperScissors />
+      <CaesarCipher />
       <ConwaysGameOfLife />
       <SimonSays />
       <Magic8Ball />
