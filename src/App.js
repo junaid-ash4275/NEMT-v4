@@ -79,12 +79,14 @@ import BPMTapper from "./components/BPMTapper";
 import RockPaperScissors from "./components/RockPaperScissors";
 import CaesarCipher from "./components/CaesarCipher";
 import Calculator from "./components/Calculator";
+import SnakeGame from "./components/SnakeGame";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SnakeGame />
       <Calculator />
       <RockPaperScissors />
       <CaesarCipher />
