@@ -81,12 +81,14 @@ import CaesarCipher from "./components/CaesarCipher";
 import Calculator from "./components/Calculator";
 import SnakeGame from "./components/SnakeGame";
 import CoinFlipper from "./components/CoinFlipper";
+import NumberGuessingGame from "./components/NumberGuessingGame";
 
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <NumberGuessingGame />
       <CoinFlipper />
       <SnakeGame />
       <Calculator />
