@@ -82,12 +82,13 @@ import Calculator from "./components/Calculator";
 import SnakeGame from "./components/SnakeGame";
 import CoinFlipper from "./components/CoinFlipper";
 import NumberGuessingGame from "./components/NumberGuessingGame";
-
+import WhackAMole from "./components/WhackAMole";
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <WhackAMole />
       <NumberGuessingGame />
       <CoinFlipper />
       <SnakeGame />
