@@ -1,3 +1,4 @@
+import SpeedClicker from "./components/SpeedClicker";
 import TicTacToe from "./components/TicTacToe";
 import RegexTester from "./components/RegexTester";
 import Magic8Ball from "./components/Magic8Ball";
@@ -88,6 +89,7 @@ import WhackAMole from "./components/WhackAMole";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SpeedClicker />
       <WhackAMole />
       <NumberGuessingGame />
       <CoinFlipper />
