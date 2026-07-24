@@ -2,6 +2,7 @@ import SpeedClicker from "./components/SpeedClicker";
 import TicTacToe from "./components/TicTacToe";
 import RegexTester from "./components/RegexTester";
 import Magic8Ball from "./components/Magic8Ball";
+import HabitTracker from "./components/HabitTracker";
 import SimonSays from "./components/SimonSays";
 import ConwaysGameOfLife from "./components/ConwaysGameOfLife";
 import StringCaseConverter from "./components/StringCaseConverter";
@@ -89,6 +90,7 @@ import WhackAMole from "./components/WhackAMole";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <HabitTracker />
       <SpeedClicker />
       <WhackAMole />
       <NumberGuessingGame />
