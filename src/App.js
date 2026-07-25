@@ -1,3 +1,4 @@
+import KaleidoscopeStudio from "./components/KaleidoscopeStudio";
 import SpeedClicker from "./components/SpeedClicker";
 import TicTacToe from "./components/TicTacToe";
 import RegexTester from "./components/RegexTester";
@@ -90,6 +91,7 @@ import WhackAMole from "./components/WhackAMole";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <KaleidoscopeStudio />
       <HabitTracker />
       <SpeedClicker />
       <WhackAMole />
