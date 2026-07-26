@@ -86,6 +86,7 @@ import SnakeGame from "./components/SnakeGame";
 import CoinFlipper from "./components/CoinFlipper";
 import NumberGuessingGame from "./components/NumberGuessingGame";
 import WhackAMole from "./components/WhackAMole";
+import ParticleSwarmStudio from "./components/ParticleSwarmStudio";
 
 
 function App() {
@@ -179,6 +180,7 @@ function App() {
       <ColorContrastChecker />
       <TicTacToe />
       <RegexTester />
+      <ParticleSwarmStudio />
     </div>
   );
 }
