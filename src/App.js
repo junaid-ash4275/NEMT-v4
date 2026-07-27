@@ -1,3 +1,4 @@
+import PowderAlchemySandbox from "./components/PowderAlchemySandbox";
 import KaleidoscopeStudio from "./components/KaleidoscopeStudio";
 import SpeedClicker from "./components/SpeedClicker";
 import TicTacToe from "./components/TicTacToe";
@@ -91,6 +92,7 @@ import WhackAMole from "./components/WhackAMole";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PowderAlchemySandbox />
       <KaleidoscopeStudio />
       <HabitTracker />
       <SpeedClicker />
