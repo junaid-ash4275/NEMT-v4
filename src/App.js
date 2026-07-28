@@ -1,3 +1,4 @@
+import FluidRippleLab from "./components/FluidRippleLab";
 import PowderAlchemySandbox from "./components/PowderAlchemySandbox";
 import KaleidoscopeStudio from "./components/KaleidoscopeStudio";
 import SpeedClicker from "./components/SpeedClicker";
@@ -93,6 +94,7 @@ import ParticleSwarmStudio from "./components/ParticleSwarmStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <FluidRippleLab />
       <PowderAlchemySandbox />
       <KaleidoscopeStudio />
       <HabitTracker />
