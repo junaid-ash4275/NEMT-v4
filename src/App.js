@@ -1,3 +1,4 @@
+import HolographicCardStudio from "./components/HolographicCardStudio";
 import SpirographStudio from "./components/SpirographStudio";
 import FluidRippleLab from "./components/FluidRippleLab";
 import PowderAlchemySandbox from "./components/PowderAlchemySandbox";
@@ -53,6 +54,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <HolographicCardStudio />
       <SpirographStudio />
       <FluidRippleLab />
       <PowderAlchemySandbox />
