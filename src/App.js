@@ -1,3 +1,4 @@
+import LaserOpticsLab from "./components/LaserOpticsLab";
 import CyberMatrixStudio from "./components/CyberMatrixStudio";
 import HolographicCardStudio from "./components/HolographicCardStudio";
 import SpirographStudio from "./components/SpirographStudio";
@@ -55,6 +56,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <LaserOpticsLab />
       <CyberMatrixStudio />
       <HolographicCardStudio />
       <SpirographStudio />
