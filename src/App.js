@@ -50,12 +50,14 @@ import ToneGenerator from "./components/ToneGenerator";
 import UnixTimestampConverter from "./components/UnixTimestampConverter";
 import BPMTapper from "./components/BPMTapper";
 import CaesarCipher from "./components/CaesarCipher";
+import QuantumVortexLab from "./components/QuantumVortexLab";
 import NumberGuessingGame from "./components/NumberGuessingGame";
 import KeycodeDetector from "./components/KeycodeDetector";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <QuantumVortexLab />
       <LaserOpticsLab />
       <CyberMatrixStudio />
       <HolographicCardStudio />
