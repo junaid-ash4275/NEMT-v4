@@ -1,4 +1,6 @@
 import ChladniPatternsLab from "./components/ChladniPatternsLab";
+import QuantumVortexLab from "./components/QuantumVortexLab";
+import BlackHoleLensingStudio from "./components/BlackHoleLensingStudio";
 import LaserOpticsLab from "./components/LaserOpticsLab";
 import CyberMatrixStudio from "./components/CyberMatrixStudio";
 import HolographicCardStudio from "./components/HolographicCardStudio";
@@ -51,7 +53,6 @@ import ToneGenerator from "./components/ToneGenerator";
 import UnixTimestampConverter from "./components/UnixTimestampConverter";
 import BPMTapper from "./components/BPMTapper";
 import CaesarCipher from "./components/CaesarCipher";
-import QuantumVortexLab from "./components/QuantumVortexLab";
 import NumberGuessingGame from "./components/NumberGuessingGame";
 import KeycodeDetector from "./components/KeycodeDetector";
 
@@ -60,6 +61,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 pb-10">
       <ChladniPatternsLab />
       <QuantumVortexLab />
+      <BlackHoleLensingStudio />
       <LaserOpticsLab />
       <CyberMatrixStudio />
       <HolographicCardStudio />
