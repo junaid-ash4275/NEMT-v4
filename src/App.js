@@ -1,4 +1,5 @@
 import ChladniPatternsLab from "./components/ChladniPatternsLab";
+import FerrofluidMagneticLab from "./components/FerrofluidMagneticLab";
 import QuantumVortexLab from "./components/QuantumVortexLab";
 import BlackHoleLensingStudio from "./components/BlackHoleLensingStudio";
 import LaserOpticsLab from "./components/LaserOpticsLab";
@@ -59,6 +60,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <FerrofluidMagneticLab />
       <ChladniPatternsLab />
       <QuantumVortexLab />
       <BlackHoleLensingStudio />
