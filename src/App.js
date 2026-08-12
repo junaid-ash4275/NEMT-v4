@@ -1,3 +1,4 @@
+import StrangeAttractorLab from "./components/StrangeAttractorLab";
 import SoftBodyJellyLab from "./components/SoftBodyJellyLab";
 import ChladniPatternsLab from "./components/ChladniPatternsLab";
 import FerrofluidMagneticLab from "./components/FerrofluidMagneticLab";
@@ -61,6 +62,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <StrangeAttractorLab />
       <SoftBodyJellyLab />
       <FerrofluidMagneticLab />
       <ChladniPatternsLab />
