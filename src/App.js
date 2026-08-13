@@ -1,3 +1,4 @@
+import PlasmaDischargeStudio from "./components/PlasmaDischargeStudio";
 import StrangeAttractorLab from "./components/StrangeAttractorLab";
 import SoftBodyJellyLab from "./components/SoftBodyJellyLab";
 import ChladniPatternsLab from "./components/ChladniPatternsLab";
@@ -62,6 +63,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PlasmaDischargeStudio />
       <StrangeAttractorLab />
       <SoftBodyJellyLab />
       <FerrofluidMagneticLab />
