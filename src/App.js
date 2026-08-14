@@ -1,3 +1,4 @@
+import SpacetimeRippleLab from "./components/SpacetimeRippleLab";
 import PlasmaDischargeStudio from "./components/PlasmaDischargeStudio";
 import StrangeAttractorLab from "./components/StrangeAttractorLab";
 import SoftBodyJellyLab from "./components/SoftBodyJellyLab";
@@ -63,6 +64,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SpacetimeRippleLab />
       <PlasmaDischargeStudio />
       <StrangeAttractorLab />
       <SoftBodyJellyLab />
