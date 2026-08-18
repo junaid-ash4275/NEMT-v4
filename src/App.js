@@ -1,4 +1,5 @@
 import CosmicHarmonographStudio from "./components/CosmicHarmonographStudio";
+import QuantumSuperpositionLab from "./components/QuantumSuperpositionLab";
 import SpacetimeRippleLab from "./components/SpacetimeRippleLab";
 import PlasmaDischargeStudio from "./components/PlasmaDischargeStudio";
 import StrangeAttractorLab from "./components/StrangeAttractorLab";
@@ -66,6 +67,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <CosmicHarmonographStudio />
+      <QuantumSuperpositionLab />
       <SpacetimeRippleLab />
       <PlasmaDischargeStudio />
       <StrangeAttractorLab />
