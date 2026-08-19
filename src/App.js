@@ -1,3 +1,4 @@
+import HyperdimensionalTesseractStudio from "./components/HyperdimensionalTesseractStudio";
 import CosmicHarmonographStudio from "./components/CosmicHarmonographStudio";
 import QuantumSuperpositionLab from "./components/QuantumSuperpositionLab";
 import SpacetimeRippleLab from "./components/SpacetimeRippleLab";
@@ -66,6 +67,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <HyperdimensionalTesseractStudio />
       <CosmicHarmonographStudio />
       <QuantumSuperpositionLab />
       <SpacetimeRippleLab />
