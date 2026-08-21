@@ -1,3 +1,4 @@
+import GravitationalWaveStudio from "./components/GravitationalWaveStudio";
 import GalaxyCollisionStudio from "./components/GalaxyCollisionStudio";
 import HyperdimensionalTesseractStudio from "./components/HyperdimensionalTesseractStudio";
 import CosmicHarmonographStudio from "./components/CosmicHarmonographStudio";
@@ -68,6 +69,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <GravitationalWaveStudio />
       <GalaxyCollisionStudio />
       <HyperdimensionalTesseractStudio />
       <CosmicHarmonographStudio />
