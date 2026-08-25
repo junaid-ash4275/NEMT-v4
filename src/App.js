@@ -1,3 +1,4 @@
+import PulsarWindNebulaStudio from "./components/PulsarWindNebulaStudio";
 import AuroraBorealisStudio from "./components/AuroraBorealisStudio";
 import GravitationalWaveStudio from "./components/GravitationalWaveStudio";
 import GalaxyCollisionStudio from "./components/GalaxyCollisionStudio";
@@ -70,6 +71,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PulsarWindNebulaStudio />
       <AuroraBorealisStudio />
       <GravitationalWaveStudio />
       <GalaxyCollisionStudio />
