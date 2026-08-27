@@ -1,3 +1,4 @@
+import SupernovaRemnantStudio from "./components/SupernovaRemnantStudio";
 import SolarFlareCoronalLoopStudio from "./components/SolarFlareCoronalLoopStudio";
 import PulsarWindNebulaStudio from "./components/PulsarWindNebulaStudio";
 import AuroraBorealisStudio from "./components/AuroraBorealisStudio";
@@ -72,6 +73,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SupernovaRemnantStudio />
       <SolarFlareCoronalLoopStudio />
       <PulsarWindNebulaStudio />
       <AuroraBorealisStudio />
