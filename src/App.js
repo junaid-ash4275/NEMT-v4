@@ -1,3 +1,4 @@
+import KilonovaMergerLab from "./components/KilonovaMergerLab";
 import SupernovaRemnantStudio from "./components/SupernovaRemnantStudio";
 import SolarFlareCoronalLoopStudio from "./components/SolarFlareCoronalLoopStudio";
 import PulsarWindNebulaStudio from "./components/PulsarWindNebulaStudio";
@@ -73,6 +74,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <KilonovaMergerLab />
       <SupernovaRemnantStudio />
       <SolarFlareCoronalLoopStudio />
       <PulsarWindNebulaStudio />
