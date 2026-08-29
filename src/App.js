@@ -1,3 +1,4 @@
+import AcousticLevitationStudio from "./components/AcousticLevitationStudio";
 import KilonovaMergerLab from "./components/KilonovaMergerLab";
 import SupernovaRemnantStudio from "./components/SupernovaRemnantStudio";
 import SolarFlareCoronalLoopStudio from "./components/SolarFlareCoronalLoopStudio";
@@ -74,6 +75,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <AcousticLevitationStudio />
       <KilonovaMergerLab />
       <SupernovaRemnantStudio />
       <SolarFlareCoronalLoopStudio />
