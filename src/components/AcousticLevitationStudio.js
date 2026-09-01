@@ -897,7 +897,7 @@ export default function AcousticLevitationStudio() {
               </span>
             </div>
             <p className="text-slate-400 text-sm mt-1">
-              Ultrasonic Acoustic Radiation Pressure ($\mathbf{F}_{rad} = -\nabla U$), Gor'kov Potential Wells & Sonoluminescence Physics Lab
+              Ultrasonic Acoustic Radiation Pressure ({"F_{rad} = -∇U"}), Gor'kov Potential Wells & Sonoluminescence Physics Lab
             </p>
           </div>
 
@@ -1198,7 +1198,7 @@ export default function AcousticLevitationStudio() {
               <p>
                 Acoustic levitation utilizes high-intensity ultrasonic standing waves to counter gravitational acceleration. 
                 When counter-propagating ultrasonic waves interfere, they form fixed <strong>pressure nodes</strong> (zero pressure fluctuation) and <strong>antinodes</strong>. 
-                Small particles experience an <strong>Acoustic Radiation Force</strong> ($\mathbf{F}_{rad} = -\nabla U$) directing them toward acoustic potential minimums governed by the Gor'kov potential field equation.
+                Small particles experience an <strong>Acoustic Radiation Force</strong> ({"F_{rad} = -∇U"}) directing them toward acoustic potential minimums governed by the Gor'kov potential field equation.
               </p>
             </div>
 
