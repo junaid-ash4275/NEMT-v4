@@ -1,3 +1,4 @@
+import TokamakFusionStudio from "./components/TokamakFusionStudio";
 import QuantumEntanglementStudio from "./components/QuantumEntanglementStudio";
 import SuperconductingFluxPinningLab from "./components/SuperconductingFluxPinningLab";
 import BoseEinsteinCondensateStudio from "./components/BoseEinsteinCondensateStudio";
@@ -79,6 +80,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <TokamakFusionStudio />
       <BoseEinsteinCondensateStudio />
       <QuantumEntanglementStudio />
       <SuperconductingFluxPinningLab />
