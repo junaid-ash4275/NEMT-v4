@@ -76,7 +76,10 @@ import UnixTimestampConverter from "./components/UnixTimestampConverter";
 import BPMTapper from "./components/BPMTapper";
 import CaesarCipher from "./components/CaesarCipher";
 import NumberGuessingGame from "./components/NumberGuessingGame";
-import KeycodeDetector from "./components/KeycodeDetector";
+import WhackAMole from "./components/WhackAMole";
+import ParticleSwarmStudio from "./components/ParticleSwarmStudio";
+import LissajousCurveGenerator from "./components/LissajousCurveGenerator";
+
 
 function App() {
   return (
@@ -161,6 +164,9 @@ function App() {
       <BreathingExercise />
       <Stopwatch />
       <TicTacToe />
+      <RegexTester />
+      <ParticleSwarmStudio />
+      <LissajousCurveGenerator />
     </div>
   );
 }
