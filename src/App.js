@@ -87,6 +87,7 @@ import CoinFlipper from "./components/CoinFlipper";
 import NumberGuessingGame from "./components/NumberGuessingGame";
 import WhackAMole from "./components/WhackAMole";
 import ParticleSwarmStudio from "./components/ParticleSwarmStudio";
+import LissajousCurveGenerator from "./components/LissajousCurveGenerator";
 
 
 function App() {
@@ -181,6 +182,7 @@ function App() {
       <TicTacToe />
       <RegexTester />
       <ParticleSwarmStudio />
+      <LissajousCurveGenerator />
     </div>
   );
 }
