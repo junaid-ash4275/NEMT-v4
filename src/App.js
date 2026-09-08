@@ -81,11 +81,14 @@ import WhackAMole from "./components/WhackAMole";
 import ParticleSwarmStudio from "./components/ParticleSwarmStudio";
 import LissajousCurveGenerator from "./components/LissajousCurveGenerator";
 import MoirePatternLab from "./components/MoirePatternLab";
+import MagnetohydrodynamicReconnectionLab from "./components/MagnetohydrodynamicReconnectionLab";
+import KeycodeDetector from "./components/KeycodeDetector";
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <MagnetohydrodynamicReconnectionLab />
       <TidalDisruptionEventStudio />
       <RelativisticParticleAcceleratorStudio />
       <TokamakFusionStudio />
@@ -167,7 +170,6 @@ function App() {
       <BreathingExercise />
       <Stopwatch />
       <TicTacToe />
-      <RegexTester />
       <ParticleSwarmStudio />
       <LissajousCurveGenerator />
       <MoirePatternLab />
