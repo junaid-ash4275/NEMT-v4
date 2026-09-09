@@ -1,3 +1,4 @@
+import MagnetarStarquakeStudio from "./components/MagnetarStarquakeStudio";
 import TidalDisruptionEventStudio from "./components/TidalDisruptionEventStudio";
 import RelativisticParticleAcceleratorStudio from "./components/RelativisticParticleAcceleratorStudio";
 import TokamakFusionStudio from "./components/TokamakFusionStudio";
@@ -88,6 +89,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <MagnetarStarquakeStudio />
       <MagnetohydrodynamicReconnectionLab />
       <TidalDisruptionEventStudio />
       <RelativisticParticleAcceleratorStudio />
