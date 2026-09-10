@@ -1,3 +1,4 @@
+import TraversableWormholeStudio from "./components/TraversableWormholeStudio";
 import MagnetarStarquakeStudio from "./components/MagnetarStarquakeStudio";
 import TidalDisruptionEventStudio from "./components/TidalDisruptionEventStudio";
 import RelativisticParticleAcceleratorStudio from "./components/RelativisticParticleAcceleratorStudio";
@@ -89,6 +90,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <TraversableWormholeStudio />
       <MagnetarStarquakeStudio />
       <MagnetohydrodynamicReconnectionLab />
       <TidalDisruptionEventStudio />
