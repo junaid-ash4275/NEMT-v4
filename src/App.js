@@ -19,6 +19,7 @@ import GalaxyCollisionStudio from "./components/GalaxyCollisionStudio";
 import HyperdimensionalTesseractStudio from "./components/HyperdimensionalTesseractStudio";
 import CosmicHarmonographStudio from "./components/CosmicHarmonographStudio";
 import QuantumSuperpositionLab from "./components/QuantumSuperpositionLab";
+import QuantumWavefunctionLab from "./components/QuantumWavefunctionLab";
 import SpacetimeRippleLab from "./components/SpacetimeRippleLab";
 import PlasmaDischargeStudio from "./components/PlasmaDischargeStudio";
 import StrangeAttractorLab from "./components/StrangeAttractorLab";
@@ -113,6 +114,7 @@ function App() {
       <HyperdimensionalTesseractStudio />
       <CosmicHarmonographStudio />
       <QuantumSuperpositionLab />
+      <QuantumWavefunctionLab />
       <SpacetimeRippleLab />
       <PlasmaDischargeStudio />
       <StrangeAttractorLab />
