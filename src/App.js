@@ -1,3 +1,4 @@
+import CosmicRayAirShowerLab from "./components/CosmicRayAirShowerLab";
 import GammaRayBurstStudio from "./components/GammaRayBurstStudio";
 import TraversableWormholeStudio from "./components/TraversableWormholeStudio";
 import MagnetarStarquakeStudio from "./components/MagnetarStarquakeStudio";
@@ -92,6 +93,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <CosmicRayAirShowerLab />
       <GammaRayBurstStudio />
       <TraversableWormholeStudio />
       <MagnetarStarquakeStudio />
