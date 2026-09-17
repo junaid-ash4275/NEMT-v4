@@ -1,3 +1,4 @@
+import AlcubierreWarpDriveStudio from "./components/AlcubierreWarpDriveStudio";
 import CosmicRayAirShowerLab from "./components/CosmicRayAirShowerLab";
 import TraversableWormholeStudio from "./components/TraversableWormholeStudio";
 import TidalDisruptionEventStudio from "./components/TidalDisruptionEventStudio";
@@ -91,6 +92,7 @@ import KeycodeDetector from "./components/KeycodeDetector";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <AlcubierreWarpDriveStudio />
       <CosmicRayAirShowerLab />
       <TraversableWormholeStudio />
       <MagnetohydrodynamicReconnectionLab />
