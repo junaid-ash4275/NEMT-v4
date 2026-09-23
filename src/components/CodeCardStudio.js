@@ -357,12 +357,44 @@ const CodeCardStudio = () => {
     setTimeout(() => setCopiedCode(false), 2000);
   };
 
+  const getCardSvgString = (element, rect) => {
+    let styleCss = "";
+    try {
+      styleCss = Array.from(document.styleSheets)
+        .map((sheet) => {
+          try {
+            return Array.from(sheet.cssRules)
+              .map((r) => r.cssText)
+              .join("");
+          } catch (e) {
+            return "";
+          }
+        })
+        .join("\n");
+    } catch (e) {
+      console.warn("Could not read document styles", e);
+    }
+
+    return `
+      <svg xmlns="http://www.w3.org/2000/svg" width="${rect.width}" height="${rect.height}">
+        <foreignObject width="100%" height="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+              ${styleCss}
+              * { box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Fira Code", "Courier New", monospace !important; }
+            </style>
+            ${element.outerHTML}
+          </div>
+        </foreignObject>
+      </svg>
+    `;
+  };
+
   const handleDownloadPNG = async () => {
     if (!cardRef.current || isExporting) return;
     setIsExporting(true);
 
     try {
-      // Create offscreen canvas for crisp rendering
       const element = cardRef.current;
       const rect = element.getBoundingClientRect();
       const canvas = document.createElement("canvas");
@@ -373,40 +405,44 @@ const CodeCardStudio = () => {
       canvas.height = rect.height * scale;
       ctx.scale(scale, scale);
 
-      // SVG ForeignObject rasterization
-      const htmlString = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="${rect.width}" height="${rect.height}">
-          <foreignObject width="100%" height="100%">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <style>
-                @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;display=swap');
-                * { box-sizing: border-box; font-family: 'Fira Code', monospace, sans-serif; }
-              </style>
-              ${element.outerHTML}
-            </div>
-          </foreignObject>
-        </svg>
-      `;
-
+      const htmlString = getCardSvgString(element, rect);
+      const encodedSvg = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(htmlString)}`;
       const img = new Image();
-      const svgBlob = new Blob([htmlString], { type: "image/svg+xml;charset=utf-8" });
-      const url = URL.createObjectURL(svgBlob);
 
       img.onload = () => {
-        ctx.drawImage(img, 0, 0);
-        URL.revokeObjectURL(url);
+        try {
+          ctx.drawImage(img, 0, 0);
+          const dataUrl = canvas.toDataURL("image/png");
+          const a = document.createElement("a");
+          a.download = `${filename || "code-snippet"}.png`;
+          a.href = dataUrl;
+          a.click();
+        } catch (exportErr) {
+          console.warn("Canvas export fallback to SVG download:", exportErr);
+          const svgBlob = new Blob([htmlString], { type: "image/svg+xml;charset=utf-8" });
+          const svgUrl = URL.createObjectURL(svgBlob);
+          const a = document.createElement("a");
+          a.download = `${filename || "code-snippet"}.svg`;
+          a.href = svgUrl;
+          a.click();
+          URL.revokeObjectURL(svgUrl);
+        } finally {
+          setIsExporting(false);
+        }
+      };
 
-        const a = document.createElement("a");
-        a.download = `${filename || "code-snippet"}.png`;
-        a.href = canvas.toDataURL("image/png");
-        a.click();
-        setIsExporting(false);
-      };
       img.onerror = () => {
+        const svgBlob = new Blob([htmlString], { type: "image/svg+xml;charset=utf-8" });
+        const svgUrl = URL.createObjectURL(svgBlob);
+        const a = document.createElement("a");
+        a.download = `${filename || "code-snippet"}.svg`;
+        a.href = svgUrl;
+        a.click();
+        URL.revokeObjectURL(svgUrl);
         setIsExporting(false);
-        alert("Downloaded via fallback image generator.");
       };
-      img.src = url;
+
+      img.src = encodedSvg;
     } catch (err) {
       console.error(err);
       setIsExporting(false);
@@ -421,36 +457,31 @@ const CodeCardStudio = () => {
       const canvas = document.createElement("canvas");
       const ctx = canvas.getContext("2d");
 
-      canvas.width = rect.width * 2;
-      canvas.height = rect.height * 2;
-      ctx.scale(2, 2);
+      const scale = 2;
+      canvas.width = rect.width * scale;
+      canvas.height = rect.height * scale;
+      ctx.scale(scale, scale);
 
-      const htmlString = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="${rect.width}" height="${rect.height}">
-          <foreignObject width="100%" height="100%">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              ${element.outerHTML}
-            </div>
-          </foreignObject>
-        </svg>
-      `;
-
+      const htmlString = getCardSvgString(element, rect);
+      const encodedSvg = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(htmlString)}`;
       const img = new Image();
-      const svgBlob = new Blob([htmlString], { type: "image/svg+xml;charset=utf-8" });
-      const url = URL.createObjectURL(svgBlob);
 
-      img.onload = async () => {
-        ctx.drawImage(img, 0, 0);
-        URL.revokeObjectURL(url);
-        canvas.toBlob(async (blob) => {
-          if (blob && navigator.clipboard && window.ClipboardItem) {
-            await navigator.clipboard.write([new window.ClipboardItem({ "image/png": blob })]);
-            setCopiedImage(true);
-            setTimeout(() => setCopiedImage(false), 2000);
-          }
-        });
+      img.onload = () => {
+        try {
+          ctx.drawImage(img, 0, 0);
+          canvas.toBlob(async (blob) => {
+            if (blob && navigator.clipboard && window.ClipboardItem) {
+              await navigator.clipboard.write([new window.ClipboardItem({ "image/png": blob })]);
+              setCopiedImage(true);
+              setTimeout(() => setCopiedImage(false), 2000);
+            }
+          }, "image/png");
+        } catch (exportErr) {
+          console.warn("Clipboard image export error:", exportErr);
+        }
       };
-      img.src = url;
+
+      img.src = encodedSvg;
     } catch (err) {
       console.error(err);
     }
