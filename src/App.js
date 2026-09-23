@@ -39,12 +39,14 @@ import BPMTapper from "./components/BPMTapper";
 import CaesarCipher from "./components/CaesarCipher";
 import NumberGuessingGame from "./components/NumberGuessingGame";
 import KeycodeDetector from "./components/KeycodeDetector";
+import ParticleTextStudio from "./components/ParticleTextStudio";
 import CodeCardStudio from "./components/CodeCardStudio";
 
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <ParticleTextStudio />
       <CodeCardStudio />
       <SortingVisualizer />
       <SpeedClicker />
