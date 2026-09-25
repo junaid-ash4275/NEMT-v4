@@ -42,11 +42,12 @@ import KeycodeDetector from "./components/KeycodeDetector";
 import ParticleTextStudio from "./components/ParticleTextStudio";
 import CodeCardStudio from "./components/CodeCardStudio";
 import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
-
+import AnimatedGradientStudio from "./components/AnimatedGradientStudio";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <AnimatedGradientStudio />
       <GlassmorphismGenerator />
       <ParticleTextStudio />
       <CodeCardStudio />
