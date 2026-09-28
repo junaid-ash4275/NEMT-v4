@@ -43,6 +43,7 @@ import ParticleTextStudio from "./components/ParticleTextStudio";
 import CodeCardStudio from "./components/CodeCardStudio";
 import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
 import AnimatedGradientStudio from "./components/AnimatedGradientStudio";
+import RegexTester from "./components/RegexTester";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
       <AnimatedGradientStudio />
       <GlassmorphismGenerator />
       <ParticleTextStudio />
+      <RegexTester />
       <CodeCardStudio />
       <SortingVisualizer />
       <SpeedClicker />
