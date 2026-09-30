@@ -44,11 +44,13 @@ import CodeCardStudio from "./components/CodeCardStudio";
 import GlassmorphismGenerator from "./components/GlassmorphismGenerator";
 import AnimatedGradientStudio from "./components/AnimatedGradientStudio";
 import RegexTester from "./components/RegexTester";
+import BlobShapeStudio from "./components/BlobShapeStudio";
 import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <BlobShapeStudio />
       <ColorPaletteGenerator />
       <AnimatedGradientStudio />
       <GlassmorphismGenerator />
