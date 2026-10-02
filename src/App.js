@@ -47,10 +47,12 @@ import RegexTester from "./components/RegexTester";
 import BlobShapeStudio from "./components/BlobShapeStudio";
 import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 import CSSFilterStudio from "./components/CSSFilterStudio";
+import CSSBoxShadowStudio from "./components/CSSBoxShadowStudio";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <CSSBoxShadowStudio />
       <CSSFilterStudio />
       <BlobShapeStudio />
       <ColorPaletteGenerator />
