@@ -48,10 +48,12 @@ import BlobShapeStudio from "./components/BlobShapeStudio";
 import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 import CSSFilterStudio from "./components/CSSFilterStudio";
 import CSSBoxShadowStudio from "./components/CSSBoxShadowStudio";
+import CSSClipPathStudio from "./components/CSSClipPathStudio";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <CSSClipPathStudio />
       <CSSBoxShadowStudio />
       <CSSFilterStudio />
       <BlobShapeStudio />
