@@ -49,10 +49,12 @@ import ColorPaletteGenerator from "./components/ColorPaletteGenerator";
 import CSSFilterStudio from "./components/CSSFilterStudio";
 import CSSBoxShadowStudio from "./components/CSSBoxShadowStudio";
 import CSSClipPathStudio from "./components/CSSClipPathStudio";
+import ColorContrastChecker from "./components/ColorContrastChecker";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <ColorContrastChecker />
       <CSSClipPathStudio />
       <CSSBoxShadowStudio />
       <CSSFilterStudio />
