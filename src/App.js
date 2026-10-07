@@ -1,3 +1,4 @@
+import FlexboxGenerator from "./components/FlexboxGenerator";
 import SpeedClicker from "./components/SpeedClicker";
 import TicTacToe from "./components/TicTacToe";
 import SynthwaveStudio from "./components/SynthwaveStudio";
@@ -54,6 +55,7 @@ import ColorContrastChecker from "./components/ColorContrastChecker";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <FlexboxGenerator />
       <ColorContrastChecker />
       <CSSClipPathStudio />
       <CSSBoxShadowStudio />
