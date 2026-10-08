@@ -51,10 +51,12 @@ import CSSFilterStudio from "./components/CSSFilterStudio";
 import CSSBoxShadowStudio from "./components/CSSBoxShadowStudio";
 import CSSClipPathStudio from "./components/CSSClipPathStudio";
 import ColorContrastChecker from "./components/ColorContrastChecker";
+import HabitTracker from "./components/HabitTracker";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <HabitTracker />
       <FlexboxGenerator />
       <ColorContrastChecker />
       <CSSClipPathStudio />
