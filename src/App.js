@@ -52,10 +52,12 @@ import CSSBoxShadowStudio from "./components/CSSBoxShadowStudio";
 import CSSClipPathStudio from "./components/CSSClipPathStudio";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import HabitTracker from "./components/HabitTracker";
+import FractalTreeStudio from "./components/FractalTreeStudio";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <FractalTreeStudio />
       <HabitTracker />
       <FlexboxGenerator />
       <ColorContrastChecker />
