@@ -53,10 +53,12 @@ import CSSClipPathStudio from "./components/CSSClipPathStudio";
 import ColorContrastChecker from "./components/ColorContrastChecker";
 import HabitTracker from "./components/HabitTracker";
 import FractalTreeStudio from "./components/FractalTreeStudio";
+import SvgWaveStudio from "./components/SvgWaveStudio";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <SvgWaveStudio />
       <FractalTreeStudio />
       <HabitTracker />
       <FlexboxGenerator />
