@@ -54,10 +54,12 @@ import ColorContrastChecker from "./components/ColorContrastChecker";
 import HabitTracker from "./components/HabitTracker";
 import FractalTreeStudio from "./components/FractalTreeStudio";
 import SvgWaveStudio from "./components/SvgWaveStudio";
+import NetworkPulseTester from "./components/NetworkPulseTester";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <NetworkPulseTester />
       <SvgWaveStudio />
       <FractalTreeStudio />
       <HabitTracker />
