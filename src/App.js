@@ -55,11 +55,13 @@ import HabitTracker from "./components/HabitTracker";
 import FractalTreeStudio from "./components/FractalTreeStudio";
 import SvgWaveStudio from "./components/SvgWaveStudio";
 import NetworkPulseTester from "./components/NetworkPulseTester";
+import BitwisePlayground from "./components/BitwisePlayground";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <NetworkPulseTester />
+      <BitwisePlayground />
       <SvgWaveStudio />
       <FractalTreeStudio />
       <HabitTracker />
