@@ -1,3 +1,4 @@
+import DNASequenceAnalyzer from "./components/DNASequenceAnalyzer";
 import FlexboxGenerator from "./components/FlexboxGenerator";
 import SpeedClicker from "./components/SpeedClicker";
 import TicTacToe from "./components/TicTacToe";
@@ -60,6 +61,7 @@ import BitwisePlayground from "./components/BitwisePlayground";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <DNASequenceAnalyzer />
       <NetworkPulseTester />
       <BitwisePlayground />
       <SvgWaveStudio />
