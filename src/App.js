@@ -1,3 +1,4 @@
+import GitCommitCrafter from "./components/GitCommitCrafter";
 import DNASequenceAnalyzer from "./components/DNASequenceAnalyzer";
 import FlexboxGenerator from "./components/FlexboxGenerator";
 import SpeedClicker from "./components/SpeedClicker";
@@ -61,6 +62,7 @@ import BitwisePlayground from "./components/BitwisePlayground";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <GitCommitCrafter />
       <DNASequenceAnalyzer />
       <NetworkPulseTester />
       <BitwisePlayground />
