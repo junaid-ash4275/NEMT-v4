@@ -1,3 +1,4 @@
+import PomodoroTimer from "./components/PomodoroTimer";
 import GitCommitCrafter from "./components/GitCommitCrafter";
 import DNASequenceAnalyzer from "./components/DNASequenceAnalyzer";
 import FlexboxGenerator from "./components/FlexboxGenerator";
@@ -62,6 +63,7 @@ import BitwisePlayground from "./components/BitwisePlayground";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PomodoroTimer />
       <GitCommitCrafter />
       <DNASequenceAnalyzer />
       <NetworkPulseTester />
