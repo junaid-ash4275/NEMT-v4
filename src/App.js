@@ -59,6 +59,7 @@ import FractalTreeStudio from "./components/FractalTreeStudio";
 import SvgWaveStudio from "./components/SvgWaveStudio";
 import NetworkPulseTester from "./components/NetworkPulseTester";
 import BitwisePlayground from "./components/BitwisePlayground";
+import CronScheduleStudio from "./components/CronScheduleStudio";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
       <DNASequenceAnalyzer />
       <NetworkPulseTester />
       <BitwisePlayground />
+      <CronScheduleStudio />
       <SvgWaveStudio />
       <FractalTreeStudio />
       <HabitTracker />
