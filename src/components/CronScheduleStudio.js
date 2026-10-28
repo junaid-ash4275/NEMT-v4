@@ -86,9 +86,9 @@ function parseField(expr, min, max, names) {
     if ([start, end].some((n) => Number.isNaN(n) || n < min || n > upper) || start > end) {
       throw new Error('out of range');
     }
-    if (names === DOW_NAMES && end === 7) end = 6;
     for (let n = start; n <= end; n += step) {
-      values.add(names === DOW_NAMES && n === 7 ? 0 : n);
+      const value = names === DOW_NAMES && n === 7 ? 0 : n;
+      if (value >= min && value <= (max === 7 ? 6 : max)) values.add(value);
     }
   });
 
@@ -401,7 +401,7 @@ const CronScheduleStudio = () => {
                       return (
                         <div
                           key={`${day.date.toDateString()}-${hour}`}
-                          title={count ? `${formatTime(new Date(day.date.setHours ? day.date : day.date))} · ${count} run${count === 1 ? '' : 's'} at ${pad(hour)}:xx` : 'No runs'}
+                          title={count ? `${DAY_LABELS[day.date.getDay()]} ${day.date.getDate()} · ${count} run${count === 1 ? '' : 's'} in the ${pad(hour)}:00 hour` : 'No runs'}
                           className="h-4 rounded-sm"
                           style={{
                             background: count ? `rgba(15, 118, 110, ${opacity})` : '#e2e8f0',
