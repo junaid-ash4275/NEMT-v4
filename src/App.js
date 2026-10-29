@@ -60,11 +60,13 @@ import SvgWaveStudio from "./components/SvgWaveStudio";
 import NetworkPulseTester from "./components/NetworkPulseTester";
 import BitwisePlayground from "./components/BitwisePlayground";
 import CronScheduleStudio from "./components/CronScheduleStudio";
+import DiffLens from "./components/DiffLens";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <PomodoroTimer />
+      <DiffLens />
       <GitCommitCrafter />
       <DNASequenceAnalyzer />
       <NetworkPulseTester />
