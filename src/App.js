@@ -61,11 +61,13 @@ import NetworkPulseTester from "./components/NetworkPulseTester";
 import BitwisePlayground from "./components/BitwisePlayground";
 import CronScheduleStudio from "./components/CronScheduleStudio";
 import DiffLens from "./components/DiffLens";
+import MeetingMeter from "./components/MeetingMeter";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <PomodoroTimer />
+      <MeetingMeter />
       <DiffLens />
       <GitCommitCrafter />
       <DNASequenceAnalyzer />
