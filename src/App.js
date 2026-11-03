@@ -63,11 +63,13 @@ import CronScheduleStudio from "./components/CronScheduleStudio";
 import DiffLens from "./components/DiffLens";
 import MeetingMeter from "./components/MeetingMeter";
 import EasingCurveStudio from "./components/EasingCurveStudio";
+import CSSGridStudio from "./components/CSSGridStudio";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <PomodoroTimer />
+      <CSSGridStudio />
       <EasingCurveStudio />
       <MeetingMeter />
       <DiffLens />
