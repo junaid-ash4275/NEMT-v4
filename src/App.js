@@ -1,4 +1,5 @@
 import PomodoroTimer from "./components/PomodoroTimer";
+import FairTab from "./components/FairTab";
 import GitCommitCrafter from "./components/GitCommitCrafter";
 import DNASequenceAnalyzer from "./components/DNASequenceAnalyzer";
 import FlexboxGenerator from "./components/FlexboxGenerator";
@@ -70,6 +71,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <PomodoroTimer />
+      <FairTab />
       <TypeScaleStudio />
       <CSSGridStudio />
       <EasingCurveStudio />
