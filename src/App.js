@@ -1,5 +1,7 @@
+import ShelfPace from "./components/ShelfPace";
 import PomodoroTimer from "./components/PomodoroTimer";
 import FairTab from "./components/FairTab";
+import RecipeScaler from "./components/RecipeScaler";
 import GitCommitCrafter from "./components/GitCommitCrafter";
 import DNASequenceAnalyzer from "./components/DNASequenceAnalyzer";
 import FlexboxGenerator from "./components/FlexboxGenerator";
@@ -70,7 +72,9 @@ import TypeScaleStudio from "./components/TypeScaleStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <ShelfPace />
       <PomodoroTimer />
+      <RecipeScaler />
       <FairTab />
       <TypeScaleStudio />
       <CSSGridStudio />
