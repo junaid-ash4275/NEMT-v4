@@ -1,3 +1,4 @@
+import RestWindow from "./components/RestWindow";
 import ShelfPace from "./components/ShelfPace";
 import PomodoroTimer from "./components/PomodoroTimer";
 import FairTab from "./components/FairTab";
@@ -72,6 +73,7 @@ import TypeScaleStudio from "./components/TypeScaleStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <RestWindow />
       <ShelfPace />
       <PomodoroTimer />
       <RecipeScaler />
