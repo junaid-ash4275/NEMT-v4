@@ -1,3 +1,4 @@
+import PayoffPath from "./components/PayoffPath";
 import FrameFit from "./components/FrameFit";
 import RestWindow from "./components/RestWindow";
 import ShelfPace from "./components/ShelfPace";
@@ -74,6 +75,7 @@ import TypeScaleStudio from "./components/TypeScaleStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <PayoffPath />
       <FrameFit />
       <RestWindow />
       <ShelfPace />
