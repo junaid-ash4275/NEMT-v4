@@ -1,3 +1,4 @@
+import MarkLine from "./components/MarkLine";
 import PayoffPath from "./components/PayoffPath";
 import FrameFit from "./components/FrameFit";
 import RestWindow from "./components/RestWindow";
@@ -75,6 +76,7 @@ import TypeScaleStudio from "./components/TypeScaleStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <MarkLine />
       <PayoffPath />
       <FrameFit />
       <RestWindow />
