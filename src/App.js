@@ -1,3 +1,4 @@
+import LaneShare from "./components/LaneShare";
 import MarkLine from "./components/MarkLine";
 import PayoffPath from "./components/PayoffPath";
 import FrameFit from "./components/FrameFit";
@@ -76,6 +77,7 @@ import TypeScaleStudio from "./components/TypeScaleStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <LaneShare />
       <MarkLine />
       <PayoffPath />
       <FrameFit />
