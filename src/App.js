@@ -1,3 +1,4 @@
+import KeyShare from "./components/KeyShare";
 import BrewBench from "./components/BrewBench";
 import LaneShare from "./components/LaneShare";
 import MarkLine from "./components/MarkLine";
@@ -78,6 +79,7 @@ import TypeScaleStudio from "./components/TypeScaleStudio";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <KeyShare />
       <BrewBench />
       <LaneShare />
       <MarkLine />
