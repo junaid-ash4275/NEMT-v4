@@ -77,10 +77,14 @@ import MeetingMeter from "./components/MeetingMeter";
 import EasingCurveStudio from "./components/EasingCurveStudio";
 import CSSGridStudio from "./components/CSSGridStudio";
 import TypeScaleStudio from "./components/TypeScaleStudio";
+import CurlCrafter from "./components/CurlCrafter";
+import JwtDecoder from "./components/JwtDecoder";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <CurlCrafter />
+      <JwtDecoder />
       <WattLedger />
       <WordCounter />
       <KeyShare />
