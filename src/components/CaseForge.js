@@ -211,7 +211,7 @@ export default function CaseForge() {
                 type="checkbox"
                 checked={dropFiller}
                 onChange={(event) => { setDropFiller(event.target.checked); setStatus(''); }}
-                className={`mt-0.5 h-4 w-4 rounded border-gray-300 text-rose-600 ${FOCUS}`}
+                className={`mt-0.5 h-4 w-4 accent-rose-600 ${FOCUS}`}
               />
               <span>
                 <span className="block text-sm font-semibold text-gray-700">Drop filler words</span>
@@ -235,7 +235,7 @@ export default function CaseForge() {
               {activeResult.value || 'Your converted text will land here.'}
             </p>
             <p className="mt-2 text-xs font-medium text-rose-900/70">
-              {activeResult.hint}. Click any style below to select it and copy the result.
+              {activeResult.hint}. Click any style to select it and copy the result.
             </p>
           </div>
         </div>
