@@ -1,3 +1,4 @@
+import HashForge from "./components/HashForge";
 import CaseForge from "./components/CaseForge";
 import WattLedger from "./components/WattLedger";
 import WordCounter from "./components/WordCounter";
@@ -84,6 +85,7 @@ import JwtDecoder from "./components/JwtDecoder";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <HashForge />
       <CaseForge />
       <CurlCrafter />
       <JwtDecoder />
