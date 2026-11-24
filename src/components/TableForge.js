@@ -197,8 +197,7 @@ export default function TableForge() {
     const parsed = parseTable(source, resolved);
     const width = columnCount(parsed.rows);
     const padded = padRows(parsed.rows, width, trimCells);
-    const uneven = padded.some((row) => parsed.rows.find((original) => original)?.length !== undefined)
-      && parsed.rows.some((row) => row.length !== width && row.length > 0);
+    const uneven = width > 0 && parsed.rows.some((row) => row.length !== width);
     const headers = hasHeader
       ? uniqueHeaders(padded[0] || [])
       : Array.from({ length: width }, (_, index) => `Column ${index + 1}`);
@@ -381,7 +380,7 @@ export default function TableForge() {
                     {preview.length ? preview.map((row, rowIndex) => (
                       <tr key={`${row.join('|')}-${rowIndex}`} className="border-t border-gray-100">
                         {row.map((cell, cellIndex) => (
-                          <td key={`${model.headers[cellIndex]}-${rowIndex}`} className="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">{cell || '—'}</td>
+                          <td key={`${model.headers[cellIndex]}-${rowIndex}`} className="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">{cell}</td>
                         ))}
                       </tr>
                     )) : (
