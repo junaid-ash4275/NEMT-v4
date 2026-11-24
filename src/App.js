@@ -1,3 +1,4 @@
+import TableForge from "./components/TableForge";
 import ParamForge from "./components/ParamForge";
 import HashForge from "./components/HashForge";
 import CaseForge from "./components/CaseForge";
@@ -86,6 +87,7 @@ import JwtDecoder from "./components/JwtDecoder";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
+      <TableForge />
       <ParamForge />
       <HashForge />
       <CaseForge />

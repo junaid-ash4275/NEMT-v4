@@ -66,7 +66,7 @@ export default function HashForge() {
     setError('');
 
     const run = async () => {
-      if (!globalThis.crypto?.subtle) {
+      if (!window.crypto?.subtle) {
         if (!cancelled) {
           setDigest(null);
           setError('This browser cannot compute hashes.');
