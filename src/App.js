@@ -1,6 +1,7 @@
 import TableForge from "./components/TableForge";
 import ParamForge from "./components/ParamForge";
 import HashForge from "./components/HashForge";
+import Base64Forge from "./components/Base64Forge";
 import CaseForge from "./components/CaseForge";
 import WattLedger from "./components/WattLedger";
 import WordCounter from "./components/WordCounter";
@@ -90,6 +91,7 @@ function App() {
       <TableForge />
       <ParamForge />
       <HashForge />
+      <Base64Forge />
       <CaseForge />
       <CurlCrafter />
       <JwtDecoder />
